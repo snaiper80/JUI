@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "views": [
+    {
+      "id": "view1",
+      "type": "imageview",
+      "frame": "{{0, 0}, {320, 480}}",
+      "backgroundColor": "#ff0000",
+      "children": [
+        {
+          "id": "childview2",
+          "type": "imageview",
+          "frame": "{{0, 0}, {10, 10}}"
+        }
+      ]
+    },
+    {
+      "id": "label1",
+      "type": "label",
+      "frame": "{{10, 10}, {200, 30}}",
+      "backgroundColor": "#00ff00",
+      "shadowColor": "#ffffff",
+      "shadowOffset": "{0, 1}",
+      "font": "bold-system",
+      "fontSize": 12,
+      "textColor": "#000000",
+      "text": {
+        "en": "English",
+        "ja": "日本語",
+        "ko": "한국어"
+      },
+      "multiline": false
+    },
+    {
+      "id": "imageview1",
+      "type": "imageview",
+      "frame": "{{20, 20}, {100, 100}}",
+      "source": "refimage1"
+    },
+    {
+      "id": "button1",
+      "type": "button",
+      "frame": "{{200, 200}, {44, 44}}",
+      "title": {
+        "normal": {
+          "en": "English Button",
+          "ja": "日本語ボタン",
+          "ko": "한국어 버튼"
+        },
+        "highlighted": {
+          "en": "English Button 2",
+          "ja": "日本語ボタン 2",
+          "ko": "한국어 버튼 2"
+        }
+      },
+      "titleFont": "system",
+      "titleFontSize": 15,
+      "titleColor": {
+        "normal": "#000000",
+        "highlighted": "#ffffff"
+      },
+      "titleShadowColor": "#ffffff",
+      "titleShadowOffset": "{0, 1}",
+      "backgroundImage": {
+        "normal": "buttonimage_normal",
+        "highlighted": "buttonimage_highlighted"
+      },
+      "action-uri": "http://m.naver.com"
+    }
+  ],
+  "resource": {
+    "refimage1": {
+      "type": "image",
+      "filename": "aaa.png",
+      "path": "http://m.naver.com/image.png",
+      "stretchedPoint": "{5, 22}"
+    },
+    "refimage2": {
+      "type": "image",
+      "filename": "aaa.png",
+      "data": "a3l1axVCqe2D2e4lckr4UOY+hU6+oawNds8znGINdWXXAxzZkzHb7L9wG/wQCW92l0/J9ynExt79xG7IhESuh8WkEu7Y5FAhE4bldP6pqneZ2Jqq/GYk4v6j94PsKJ2BF1ZKqcoAJpHnusOKMRGqubAF6RHyqvhzrchUGJyK58ewXkkb0UwezrXN/gKz/r3vQJe4DkkA3xlBRqINvFscPnd0EWDl+FJJQ34zv+pq52hJDsvre2a1T6zFfy2KBJPK"
+    },
+    "buttonimage_normal": {
+      "type": "image",
+      "filename": "btn_tap1.png",
+      "stretchedPoint": "{5, 22}"
+    },
+    "buttonimage_highlighted": {
+      "type": "image",
+      "filename": "btn_tap2.png",
+      "stretchedPoint": "{5, 22}"
+    }
+  }
+}

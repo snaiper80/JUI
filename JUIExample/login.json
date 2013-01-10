@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "views": [
+    {
+      "id": "backgroundview",
+      "type": "view",
+      "frame": "{{0, 0}, {320, 460}}",
+      "backgroundColor": "#edeff1"
+    },
+    {
+      "id": "noticeImage",
+      "type": "imageview",
+      "frame": "{{0, 55}, {59, 59}}",
+      "source": "setting_image",
+      "autocenter": "h"
+    },
+    {
+      "id": "noticeLabel",
+      "type": "label",
+      "frame": "{{0, 236}, {287, 60}}",
+      "autocenter": "h",
+      "shadowColor": "#ffffff",
+      "shadowOffset": "{0, 1}",
+      "font": "system",
+      "fontSize": 15,
+      "textColor": "#19202c",
+      "text": {
+        "en": "In order to use the line must have an account. \nPlease install the App",
+        "ja": "利用するためには、Appのアカウントが必要です。\nラインアプリをインストールしてください。",
+        "ko": "이용하기 위해서는 계정이 필요합니다.\n앱을 인스톨해주세요."
+      },
+      "align": "center",
+      "multiline": true
+    },
+    {
+      "id": "loginButton",
+      "type": "button",
+      "frame": "{{16, 354}, {290, 60}}",
+      "title": {
+        "normal": {
+          "en": "Install the App.",
+          "ja": "Applicationアプリインストール",
+          "ko": "App 인스톨"
+        },
+        "highlighted": {
+          "en": "Start to install the App.",
+          "ja": "Appアプリインストールの開始",
+          "ko": "App 인스톨 시작"
+        }
+      },
+      "titleFont": "system",
+      "titleFontSize": 19,
+      "titleColor": {
+        "normal": "#ffffff",
+        "highlighted": "#ffffff"
+      },
+      "titleShadowColor": "#30ac00",
+      "titleShadowOffset": "{0, -1}",
+      "backgroundImage": {
+        "normal": "login_button_image",
+        "highlighted": "login_button_image_tap"
+      },
+      "action-uri": "http://m.naver.com"
+    }
+  ],
+  "resource": {
+    "setting_image": {
+      "type": "image",
+      "filename": "settings.png"
+    },
+    "login_button_image": {
+      "type": "image",
+      "filename": "certify_bt_common_default.png",
+      "stretchedPoint": "{7, 60}"
+    },
+    "login_button_image_tap": {
+      "type": "image",
+      "filename": "certify_bt_common_tap.png",
+      "stretchedPoint": "{7, 60}"
+    }
+  }
+}
