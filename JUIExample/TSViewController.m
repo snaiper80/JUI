@@ -15,7 +15,7 @@
 
 @implementation TSViewController {
 @private
-    JUIFactory *mParser;
+    JUIFactory        *mParser;
     UIScrollView      *mParentView;
     NSArray           *mExamplePages;
 }
